@@ -6,5 +6,5 @@ void		ft_lstadd_front(t_list **lst, t_list *new)
 
 	tmp = *lst;
 	*lst = new;
-	new->next = *tmp;
+	new->next = tmp;
 }
