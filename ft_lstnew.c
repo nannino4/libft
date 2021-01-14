@@ -6,7 +6,7 @@ t_list		*ft_lstnew(void *content)
 
 	if (!(ret = (t_list *)malloc(sizeof(t_list))))
 		return (0);
-	ret->content = *content;
+	ret->content = content;
 	ret->next = 0;
 	return (ret);
 }
